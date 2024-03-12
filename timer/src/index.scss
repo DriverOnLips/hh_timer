@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+}
+
+#root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	font-family: Lato !important;
+	font-size: 21px;
+
+	#app {
+		width: 500px;
+
+		#task_input {
+			width: 100%;
+			gap: 1rem;
+
+			input {
+				all: unset;
+				width: 450px;
+				font-family: Lato;
+				font-size: 21px;
+				background-color: rgb(73, 73, 73);
+				color: white;
+				border-radius: 5px;
+			}
+
+			button {
+				all: unset;
+				font-family: Lato;
+				font-size: 21px;
+				background-color: white;
+				padding: 2px;
+				border-radius: 5px;
+			}
+		}
+
+		#task_list {
+			all: unset;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 500px;
+			overflow-y: auto;
+			margin-top: 10px;
+
+			li {
+				all: unset;
+				color: white;
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid white;
+				padding: 0.5rem 1rem 0.5rem 0;
+				cursor: pointer;
+
+				.task_timer {
+					color: deepskyblue;
+				}
+			}
+		}
+
+		.title {
+			color: white;
+			margin-bottom: 2rem;
+		}
+
+		.dol {
+			color: white;
+			margin-top: 1rem;
+		}
+	}
+}
